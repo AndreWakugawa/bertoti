@@ -21,8 +21,10 @@ Within Google, we sometimes say, “Software engineering is programming integrat
 3 exemplos de trade-offs:
 - Uso de Python: facilidade de programação em troca de menor velocidade no código. Usabilidade por Eficiência.
 
-- Contratação de mais desenvolvedores para um projeto: maior velocidade e troca de ideias para o desenvolvimento em troca de maiores gastos.
-Eficiência por Recurso Monetário.
+- Adição de criptografia: propõe maior segurança para os dados do sistema mas requer tempo e manutenção constante para se manter útil.
+Segurança x Manutenção
 
-- Consumo de café: aumenta a disposição após o consumo mas ao longo termo gera dependência e ansiedade.
-Produtividade por saúde.
+- Uso de github: possibilidade de versionamento, maior organização e segurança em troca de tempo de aprendizado.
+Escalabilidade x Facilidade
+
+
