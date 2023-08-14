@@ -19,12 +19,12 @@ Within Google, we sometimes say, “Software engineering is programming integrat
 - Exemplos dados de dimensão (Manutenção e Modificação do Software já desenvolvido)
 
 3 exemplos de trade-offs:
-- Uso de Python: facilidade de programação em troca de menor velocidade no código. Usabilidade por Eficiência.
+- Uso de Python: maior facilidade de programação por ser mais "entendível" em relação à outras linguagens. Porém em troca, há uma considerável diminuição na velocidade no código. Usabilidade por Eficiência.
 
-- Adição de criptografia: propõe maior segurança para os dados do sistema mas requer tempo e manutenção constante para se manter útil.
-Segurança x Manutenção
+- Adição de criptografia: propõe maior segurança para os dados do sistema mas requer tempo e manutenção constante para se manter útil, o que pode depreciar o software em relação à velocidade do sistema e experiência de usuário (necessidade de login a cada nova sessão, uso de 2FA, etc.)
+Segurança x Usabilidade
 
-- Uso de github: possibilidade de versionamento, maior organização e segurança em troca de tempo de aprendizado.
+- Uso de github: possibilidade de versionamento, maior organização e segurança que propõe um ambiente melhor para o desenvolvimento em maior número. Em troca há uma grande dificuldade e tempo de aprendizado.
 Escalabilidade x Facilidade
 
 
