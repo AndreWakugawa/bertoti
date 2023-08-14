@@ -25,6 +25,6 @@ Within Google, we sometimes say, “Software engineering is programming integrat
 Segurança x Usabilidade
 
 - Uso de github: possibilidade de versionamento, maior organização e segurança que propõe um ambiente melhor para o desenvolvimento em maior número. Em troca há uma grande dificuldade e tempo de aprendizado.
-Escalabilidade x Facilidade
+Escalabilidade x Usabilidade/Acessibilidade
 
 
