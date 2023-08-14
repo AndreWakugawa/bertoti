@@ -28,3 +28,14 @@ Segurança x Usabilidade
 Escalabilidade x Usabilidade/Acessibilidade
 
 
+-----------------------------------
+
+Por que dois softwares que oferecem os mesmos recursos e experiências possuem uma diferença enorme de usuários?
+
+Exemplo: Steam e EGS(Epic Games Store) <Usabilidade>
+
+Ambos são 'marketplaces' de jogos e softwares digitais, disponibilizam valores em Real(R$) e oferecem promoções periodicamente.
+
+Na plataforma Steam há uma ótima experiência de usuário estabelecida faz décadas com botões posicionados onde se espera. Há tambem uma identidade visual facilmente reconhecível além de promoções de estação (Outono, primavera, inverno e verão).
+
+A plataforma EGS oferece um jogo grátis para resgate toda semana, possui as promoções de estação e o uso de Cupons de Desconto para se diferenciar da Steam. Contudo, a experiência do usuário é consideravelmente inferior. O sistema ao todo é mais lento mesmo consumindo mais recursos da máquina do usuári. Além disso, os botões são difíceis de encontrar e os filtros (jogos já instalados, ordenação alfabética) não funcionam como deveriam.
