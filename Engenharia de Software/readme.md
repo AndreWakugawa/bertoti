@@ -11,3 +11,18 @@ often based on imprecise estimates of time and growth.
 -  No contexto de projeto, o ES deve priorizar o tempo e a possibilidade de mudanças.
 -  No contexto de uma organização, o ES deve priorizar escalabilidade e eficiência.
 -  É responsabilidade do Engenheiro de Software realizar decisões de grande risco que, frequentemente, tem em falta as informações de tempo e crescimento necessárias.
+
+
+Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming.
+
+- Para o Google a Engenharia de Software é a Programação com a passagem de tempo.
+- Exemplos dados de dimensão (Manutenção e Modificação do Software já desenvolvido)
+
+3 exemplos de trade-offs:
+- Uso de Python: facilidade de programação em troca de menor velocidade no código. Usabilidade por Eficiência.
+
+- Contratação de mais desenvolvedores para um projeto: maior velocidade e troca de ideias para o desenvolvimento em troca de maiores gastos.
+Eficiência por Recurso Monetário.
+
+- Consumo de café: aumenta a disposição após o consumo mas ao longo termo gera dependência e ansiedade.
+Produtividade por saúde.
