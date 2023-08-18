@@ -1,3 +1,5 @@
+Atividades 1 e 2
+
 We see three critical differences between programming and software engineering:
 time, scale, and the trade-offs at play.
 On a software engineering project,
@@ -30,6 +32,8 @@ Escalabilidade x Usabilidade/Acessibilidade
 
 -----------------------------------
 
+Atividade 3
+
 Por que dois softwares que oferecem os mesmos recursos e experiências possuem uma diferença enorme de usuários?
 
 Exemplo: Steam e EGS(Epic Games Store) <Usabilidade>
@@ -39,3 +43,48 @@ Ambos são 'marketplaces' de jogos e softwares digitais, disponibilizam valores 
 Na plataforma Steam há uma ótima experiência de usuário estabelecida faz décadas com botões posicionados onde se espera. Há tambem uma identidade visual facilmente reconhecível além de promoções de estação (Outono, primavera, inverno e verão).
 
 A plataforma EGS oferece um jogo grátis para resgate toda semana, possui as promoções de estação e o uso de Cupons de Desconto para se diferenciar da Steam. Contudo, a experiência do usuário é consideravelmente inferior. O sistema ao todo é mais lento mesmo consumindo mais recursos da máquina do usuári. Além disso, os botões são difíceis de encontrar e os filtros (jogos já instalados, ordenação alfabética) não funcionam como deveriam.
+
+---------------------------------------
+
+Atividade 4
+
+https://www.nngroup.com/articles/ten-usability-heuristics/
+
+Perguntas: 
+ - sobre qual requisito não funcional este texto fala?
+   O texto fala sobre a usabilidade.
+ - qual a importância?
+   user experience (ux), facilidade de utilizar um software
+ - como "obter" esse recurso nao-funcional?
+   aplicando as 10 heurísticas do texto.
+ - encontre 1 erro e 1 acerto de cada heuristica e coloque no seu readme do git
+   1. Visibilidade do status de sistema.
+     - Acerto:
+     - Erro:
+   2. Correspondência entre sistema e o mundo real.
+     - Acerto:
+     - Erro:
+   3. Controle pelo usuário e Liberdade.
+     - Acerto:
+     - Erro:
+   4. Consistência e padrões.
+     - Acerto:
+     - Erro:
+   5. Prevenção de erros.
+     - Acerto:
+     - Erro:
+   6. Reconhecimento ao invés de relembrar.
+     - Acerto:
+     - Erro:
+   7. Flexibilidade e eficiência de uso.
+     - Acerto:
+     - Erro:
+   8. Estética e design minimalístico.
+     - Acerto:
+     - Erro:
+   9. Ajudar usuários a reconhecer, diagnosticar e recuperar de erros.
+     - Acerto:
+     - Erro:
+   10. Ajuda e documentação.
+     - Acerto:
+     - Erro:
