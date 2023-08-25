@@ -88,3 +88,7 @@ Perguntas:
    10. Ajuda e documentação.
      - Acerto: Trello com templates que ajudam novos usuários.
      - Erro: Página de suporte ao cliente sem barra de pesquisa.
+
+----------------------------------------
+Atividade 5: Exemplo de diagrama de caso de uso.
+![Diagrama de Passagem de Ônibus](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/useCasePassagemOnibus.png?raw=true)
