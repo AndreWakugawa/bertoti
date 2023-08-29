@@ -11,28 +11,19 @@ import java.util.*;
  * @author Noite
  */
 public class Viagem {
-    private String dataHora;
-    private List<Usuario> passageiros = new LinkedList<Usuario>();
+    private List<Usuario> listaPassageiros = new LinkedList<Usuario>();
+    private Rota rota;
 
-  
-    public String getDataHora() {
-        return dataHora;
+    public List<Usuario> getListaPassageiros() {
+        return listaPassageiros;
     }
 
-    public void setDataHora(String dataHora) {
-        this.dataHora = dataHora;
+    public void setListaPassageiros(List<Usuario> listaPassageiros) {
+        this.listaPassageiros = listaPassageiros;
     }
 
-    public List<Usuario> getPassageiros() {
-        return passageiros;
+    public Viagem(String dataHora, List<Usuario> listaPassageiros, Rota rota) {
+        this.listaPassageiros = listaPassageiros;
+        this.rota = rota;
     }
-
-    public void setPassageiros(List<Usuario> passageiros) {
-        this.passageiros = passageiros;
-    }
-
-    public boolean addRota(String cidadeOrigem, String cidadeDestino) {
-        
-    }
-    
 }
