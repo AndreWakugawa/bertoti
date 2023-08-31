@@ -12,6 +12,7 @@ import java.util.*;
  */
 public class Rota {
     private HashMap <Cidade, List<Cidade>>rota = new LinkedHashMap<>();
+    private Assento[][] assentos;
 
     public HashMap <Cidade, List<Cidade>> getRota() {
         return rota;
@@ -21,8 +22,13 @@ public class Rota {
         this.rota = rota;
     }
 
-    public Rota(HashMap<Cidade, List<Cidade>>rota) {
+    public Assento[][] getAssentos() {
+        return assentos;
+    }
+
+    public Rota(HashMap<Cidade, List<Cidade>>rota, int linhas, int colunas) {
         this.rota = new LinkedHashMap<>();
+        this.assentos = new Assento[linhas][colunas];
     }
     
     public boolean verificarRota(Cidade cidadeOrigem, Cidade cidadeDestino) {
@@ -52,6 +58,20 @@ public class Rota {
             }            
         } else {
             System.out.println("Não existem rotas partindo de " +cidadeOrigem.getNome());
+        }
+    }
+    
+    public void reservarAssento(int linha, int coluna, Passageiro passageiro) {
+        if (linha >= 0 && linha < assentos.length && coluna >= 0 && coluna < assentos[linha].length) {
+            Assento assento = assentos[linha][coluna];
+            if (!assento.isReservado()) {
+                assento.setPassageiro(passageiro);
+                System.out.println("Assento reservado na linha " +linha + ", coluna " +coluna);
+            } else {
+                System.out.println("Assento já está reservado.");
+            }
+        } else {
+            System.out.println("Assento inválido.");
         }
     }
 }

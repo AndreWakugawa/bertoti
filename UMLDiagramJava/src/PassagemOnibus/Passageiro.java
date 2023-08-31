@@ -8,9 +8,18 @@ package PassagemOnibus;
  *
  * @author Noite
  */
-public class Usuario {
+public class Passageiro {
     String nome;
-    
-    
-    
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Passageiro(String nome) {
+        this.nome = nome;
+    }    
 }

@@ -4,15 +4,12 @@
  */
 package PassagemOnibus;
 
-import java.util.*;
-
 /**
  *
- * @author Noite
+ * @author André
  */
-public class Viagem {
+public class Assento {
     private Passageiro passageiro;
-    private Rota rota;
 
     public Passageiro getPassageiro() {
         return passageiro;
@@ -22,16 +19,7 @@ public class Viagem {
         this.passageiro = passageiro;
     }
 
-    public Viagem(String dataHora, Passageiro passageiro, Rota rota) {
-        this.passageiro = passageiro;
-        this.rota = rota;
-    }
-
-    public Rota getRota() {
-        return rota;
-    }
-
-    public void setRota(Rota rota) {
-        this.rota = rota;
+    public boolean isReservado() {
+        return passageiro != null;
     }
 }

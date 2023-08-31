@@ -13,27 +13,21 @@ import java.util.*;
 public class Main {
     
     public static void main(String[] args) {
-        
-        HashMap<Cidade, List<Cidade>> rotasMap = new LinkedHashMap<>();
-//        rotasMap.put(new Cidade("São Paulo"), Arrays.asList(new Cidade("Rio de Janeiro"), new Cidade("Belo Horizonte")));
-//        rotasMap.put(new Cidade("Rio de Janeiro"), Arrays.asList(new Cidade("Salvador")));
-        
-        Rota rota = new Rota(rotasMap);
+        Passageiro passageiro = new Passageiro("Maria José");
+        Rota rota = new Rota(new LinkedHashMap<>(), 10, 4);
+        String dataHora = "2023-10-05 20:00:00";
         
         rota.addRota(new Cidade ("São Paulo"), new Cidade("Rio de Janeiro"));
         rota.addRota(new Cidade ("São Paulo"), new Cidade("Belo Horizonte"));
         rota.addRota(new Cidade ("São Paulo"), new Cidade("São José dos Campos"));
         rota.addRota(new Cidade("Rio de Janeiro"), new Cidade("São Paulo"));
         
+        
+        Viagem viagem = new Viagem(dataHora, passageiro, rota);
+        
         Cidade cidadeOrigem = new Cidade("São Paulo");        
         System.out.println("Exemplo de busca de viagem partindo de São Paulo");
         rota.verificarOrigem(cidadeOrigem);        
         System.out.println("Exemplo em que o usuário escolheu Rio de Janeiro como destino");
-        
-        
-        
-    }
-
-
-        
+    }    
 }
