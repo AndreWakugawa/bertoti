@@ -8,7 +8,7 @@ import java.util.*;
 
 /**
  *
- * @author André
+ * @author AndreWakugawa
  */
 public class Main {
     
@@ -29,5 +29,12 @@ public class Main {
         System.out.println("Exemplo de busca de viagem partindo de São Paulo");
         rota.verificarOrigem(cidadeOrigem);        
         System.out.println("Exemplo em que o usuário escolheu Rio de Janeiro como destino");
-    }    
+        
+        System.out.println("Visualização dos assentos da rota antes da reserva do usuário");
+        rota.visualizarAssentos();
+        
+        System.out.println("Visualização dos assentos após a reserva do usuário");
+        rota.reservarAssento(0, 3, passageiro);
+        rota.visualizarAssentos();
+    }
 }

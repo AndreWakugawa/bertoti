@@ -29,6 +29,11 @@ public class Rota {
     public Rota(HashMap<Cidade, List<Cidade>>rota, int linhas, int colunas) {
         this.rota = new LinkedHashMap<>();
         this.assentos = new Assento[linhas][colunas];
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                this.assentos[i][j] = new Assento();
+            }
+        }
     }
     
     public boolean verificarRota(Cidade cidadeOrigem, Cidade cidadeDestino) {
@@ -58,6 +63,15 @@ public class Rota {
             }            
         } else {
             System.out.println("Não existem rotas partindo de " +cidadeOrigem.getNome());
+        }
+    }
+    
+    public void visualizarAssentos() {
+    for (int i = 0; i < assentos.length; i++) {
+        for (int j = 0; j < assentos[i].length; j++) {
+            System.out.print(assentos[i][j].isReservado() ? "X " : "O ");
+            }
+        System.out.println();
         }
     }
     
