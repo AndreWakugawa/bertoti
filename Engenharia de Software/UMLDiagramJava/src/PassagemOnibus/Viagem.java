@@ -8,31 +8,30 @@ import java.util.*;
 
 /**
  *
- * @author Noite
+ * @author AndreWakugawa
  */
 public class Viagem {
-    private String dataHora;
-    private List<Usuario> passageiros = new LinkedList<Usuario>();
+    private Passageiro passageiro;
+    private Rota rota;
 
-  
-    public String getDataHora() {
-        return dataHora;
+    public Passageiro getPassageiro() {
+        return passageiro;
     }
 
-    public void setDataHora(String dataHora) {
-        this.dataHora = dataHora;
+    public void setPassageiro(Passageiro passageiro) {
+        this.passageiro = passageiro;
     }
 
-    public List<Usuario> getPassageiros() {
-        return passageiros;
+    public Viagem(String dataHora, Passageiro passageiro, Rota rota) {
+        this.passageiro = passageiro;
+        this.rota = rota;
     }
 
-    public void setPassageiros(List<Usuario> passageiros) {
-        this.passageiros = passageiros;
+    public Rota getRota() {
+        return rota;
     }
 
-    public boolean addRota(String cidadeOrigem, String cidadeDestino) {
-        
+    public void setRota(Rota rota) {
+        this.rota = rota;
     }
-    
 }
