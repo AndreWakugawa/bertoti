@@ -8,7 +8,7 @@ import java.util.*;
 
 /**
  *
- * @author Noite
+ * @author AndreWakugawa
  */
 public class Viagem {
     private Passageiro passageiro;

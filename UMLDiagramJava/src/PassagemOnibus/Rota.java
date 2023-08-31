@@ -8,7 +8,7 @@ import java.util.*;
 
 /**
  *
- * @author Noite
+ * @author AndreWakugawa
  */
 public class Rota {
     private HashMap <Cidade, List<Cidade>>rota = new LinkedHashMap<>();

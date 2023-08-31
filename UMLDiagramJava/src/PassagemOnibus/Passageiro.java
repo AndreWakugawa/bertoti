@@ -6,10 +6,10 @@ package PassagemOnibus;
 
 /**
  *
- * @author Noite
+ * @author AndreWakugawa
  */
 public class Passageiro {
-    String nome;
+    private String nome;
 
     public String getNome() {
         return nome;

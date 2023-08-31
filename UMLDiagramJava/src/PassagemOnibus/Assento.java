@@ -6,7 +6,7 @@ package PassagemOnibus;
 
 /**
  *
- * @author André
+ * @author AndreWakugawa
  */
 public class Assento {
     private Passageiro passageiro;
