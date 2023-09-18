@@ -97,3 +97,6 @@ Atividade 5: Exemplo de diagrama de caso de uso.
 Atividade 6: Diagrama UML e código Java do sisteminha.
 ![Diagrama UML de Passagem de Ônibus](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/UML.drawio.png?raw=true)
 Código em https://github.com/AndreWakugawa/bertoti/tree/main/Engenharia%20de%20Software/UMLDiagramJava
+----------------------------------------
+Atividade 7: Testes em JUnit.
+Código em https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/UMLDiagramJava/src/test/java/teste.java
