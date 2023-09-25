@@ -38,7 +38,7 @@ public class Rota {
     
     public boolean verificarRota(Cidade cidadeOrigem, Cidade cidadeDestino) {
         
-        return rota.containsKey(cidadeOrigem) && rota.get(cidadeOrigem).equals(cidadeDestino);
+        return rota.containsKey(cidadeOrigem) && rota.get(cidadeOrigem).contains(cidadeDestino);
         }
     
     public void addRota(Cidade cidadeOrigem, Cidade cidadeDestino) {
