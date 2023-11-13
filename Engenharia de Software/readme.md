@@ -91,7 +91,8 @@ Perguntas:
 
 ----------------------------------------
 Atividade 5: Exemplo de diagrama de caso de uso.
-![Diagrama de Passagem de Ônibus](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/useCasePassagemOnibus.png?raw=true)
+
+![Diagrama de Passagem de Ônibus](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/useCasePassagemOnibus.drawio.png)
 
 ----------------------------------------
 Atividade 6: Diagrama UML e código Java do sisteminha.
