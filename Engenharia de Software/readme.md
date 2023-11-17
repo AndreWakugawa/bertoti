@@ -58,36 +58,66 @@ Perguntas:
  - como "obter" esse recurso nao-funcional?
    aplicando as 10 heurísticas do texto.
  - encontre 1 erro e 1 acerto de cada heuristica e coloque no seu readme do git
-   1. Visibilidade do status de sistema.
+   
+   1 - Visibilidade do status de sistema.
      - Acerto: ecommerce que indica se algum item está indisponível deixando o botão de selecionar desabilitado 
-     - Erro: Browser que não indica se uma página está abrindo após clicar em um link (sem barra de progresso)
-   2. Correspondência entre sistema e o mundo real.
+     - Erro: Barra de progresso com indicação falsa
+       ![loadingBar](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/loadingBarMeme.png)
+       
+   2 - Correspondência entre sistema e o mundo real.
      - Acerto: Controle de volume do celular (botão de cima aumenta, botão de baixo diminui)
      - Erro: SOS de emergência no celular (apertar botão de ligar 5 vezes seguidas) não é associado a algo parecido do mundo real
-   3. Controle pelo usuário e Liberdade.
+       ![5x](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/Emergency5x.jpg)
+       
+   3 - Controle pelo usuário e Liberdade.
      - Acerto: Redes sociais que permitem facilmente o usuário a deletar a conta quando quiserem.
      - Erro: Sites de notícias que permitem que você leia somente o primeiro parágrafo antes de oferecer um plano de assinatura para continuar a leitura.
-   4. Consistência e padrões.
-     - Acerto: Botão "confirmar" ou "continuar" em cor verde
-     - Erro: Botão "voltar" ou "cancelar" em cor verde
-   5. Prevenção de erros.
+       ![paywall](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/paywall.png)
+       
+   4 - Consistência e padrões.
+     - Acerto: Botão "confirmar" ou "continuar" em cor destacada
+     - Erro: Botão "voltar" ou "cancelar" em cor destacada
+       
+       ![contrast](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/positive-actions-contrast.png)
+       
+   5 - Prevenção de erros.
      - Acerto: "autofill" em barras de pesquisa
-     - Erro: Cadastros que requerem que o usuário formate o telefone com simbolos "()-"
-   6. Reconhecimento ao invés de relembrar.
+     - Erro: Cadastros que requerem que o usuário formate o telefone manualmente
+       ![phone](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/phone_textfield_example.png)
+       
+   6 - Reconhecimento ao invés de relembrar.
      - Acerto: Browsers que mantém o histórico do usuário.
-     - Erro: Redes sociais que não mantém o usuário logado após a saída.
-   7. Flexibilidade e eficiência de uso.
+     - Erro: Ícones não convencionais sem identificação de texto
+ 
+       ![semTexto](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/intranet-icons_no-labels_horizontal.png)
+       
+       Com texto:
+       
+       ![comTexto](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/intranet-icons_horizontal.png)
+       
+   7 - Flexibilidade e eficiência de uso.
      - Acerto: Email que permite o envio do mesmo email para várias pessoas (BCC)
-     - Erro: aplicativos que não permitem customização.
-   8. Estética e design minimalístico.
+     - Erro: Campos de entrada com unidade de medida única
+  
+       ![medidaUnica](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/input_unica_medida.png)
+       
+   8 - Estética e design minimalístico.
      - Acerto: Landing page do google hoje em dia.
-     - Erro: Websites na década de 90
-   9. Ajudar usuários a reconhecer, diagnosticar e recuperar de erros.
+     - Erro: Websites na década de 90 (ou website japonês hoje em dia)
+  
+       ![yahooJapan](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/yahoo_japan.png)
+       
+   9 - Ajudar usuários a reconhecer, diagnosticar e recuperar de erros.
      - Acerto: Instagram com mensagem de "Tem certeza que deseja voltar?" quando o usuário volta após tirar uma foto
-     - Erro: Quando usuário preenche um URL com formatação errada e a mensagem "Entre com URL válido" aparece
-   10. Ajuda e documentação.
+     - Erro: Mensagem "Entre com URL válido" longe do campo de entrada, LinkedIn.
+  
+       ![linkedinUrl](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/linkedin_url.jpg)
+       
+   10 - Ajuda e documentação.
      - Acerto: Trello com templates que ajudam novos usuários.
      - Erro: Página de suporte ao cliente sem barra de pesquisa.
+  
+       ![ifoodSupport](https://github.com/AndreWakugawa/bertoti/blob/main/Engenharia%20de%20Software/blob/ifood_sem_busca.png)
 
 ----------------------------------------
 Atividade 5: Exemplo de diagrama de caso de uso.
