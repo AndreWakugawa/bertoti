@@ -1,5 +1,11 @@
-print com os 4 comandos básicos spring
 GET
+![](https://github.com/AndreWakugawa/bertoti/blob/main/Lab3/FirstServer/Images/get.png)
+
 POST
+![](https://github.com/AndreWakugawa/bertoti/blob/main/Lab3/FirstServer/Images/post.png)
+
 PUT
-DEL
+![](https://github.com/AndreWakugawa/bertoti/blob/main/Lab3/FirstServer/Images/put.png)
+
+DELETE
+![](https://github.com/AndreWakugawa/bertoti/blob/main/Lab3/FirstServer/Images/del.png)
