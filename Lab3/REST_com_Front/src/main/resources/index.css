@@ -1,0 +1,7 @@
+.jokes {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin: -25px 0 0 -25px;
+  font-size: 200px
+}
