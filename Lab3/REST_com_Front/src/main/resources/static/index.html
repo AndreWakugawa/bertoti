@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Film API Client</title>
+  <script>
+    const apiUrl = 'http://localhost:8080/films';
+
+    function display(data) {
+      alert(JSON.stringify(data, null, 2));
+    }
+
+    function handleError(error) {
+      console.error('Error:', error);
+      alert('Error: ' + error);
+    }
+
+    function getFilms() {
+      fetch(apiUrl)
+              .then(response => response.json())
+              .then(data => display(data))
+              .catch(error => handleError(error));
+    }
+
+    function getFilmById() {
+      const id = prompt("Enter the film ID:");
+      fetch(`${apiUrl}/${id}`)
+              .then(response => response.json())
+              .then(data => display(data))
+              .catch(error => handleError(error));
+    }
+
+    function postFilm() {
+      const name = prompt("Enter film name:");
+      const genero = prompt("Enter film genre:");
+      const ano = parseInt(prompt("Enter film year:"), 10);
+      const film = { name, genero, ano };
+
+      fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(film)
+      })
+              .then(response => response.json())
+              .then(data => display(data))
+              .catch(error => handleError(error));
+    }
+
+    function updateFilm() {
+      const id = prompt("Enter the film ID you want to update:");
+      const name = prompt("Enter new film name:");
+      const genero = prompt("Enter new film genre:");
+      const ano = parseInt(prompt("Enter new film year:"), 10);
+      const film = { name, genero, ano };
+
+      fetch(`${apiUrl}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(film)
+      })
+              .then(response => response.json())
+              .then(data => display(data))
+              .catch(error => handleError(error));
+    }
+
+    function deleteFilm() {
+      const id = prompt("Enter the film ID to delete:");
+      fetch(`${apiUrl}/${id}`, { method: 'DELETE' })
+              .catch(error => handleError(error));
+    }
+  </script>
+</head>
+<body>
+<h1>Film API Client</h1>
+<button onclick="getFilms()">Get All Films</button>
+<button onclick="getFilmById()">Get Film By ID</button>
+<button onclick="postFilm()">Add New Film</button>
+<button onclick="updateFilm()">Update Film</button>
+<button onclick="deleteFilm()">Delete Film</button>
+</body>
+</html>
