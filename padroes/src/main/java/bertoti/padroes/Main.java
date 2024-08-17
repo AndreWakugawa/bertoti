@@ -1,19 +1,79 @@
 package bertoti.padroes;
 
+import bertoti.padroes.Tickets.DefaultTicket;
+import bertoti.padroes.Tickets.DiscountTicket;
+import bertoti.padroes.Tickets.MermbershipTicket;
+import bertoti.padroes.Tickets.Ticket;
+import bertoti.padroes.util.RandomDateGenerator;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.*;
+import java.util.random.RandomGenerator;
+
 public class Main {
     public static void main(String[] args) {
+        Random rng = new Random();
+        Double ticketValue = 10.0;
+        Double totalAmount = 0.0;
+        Double defaultAmount = 0.0;
+        Double discountAmount = 0.0;
+        Double membershipAmount = 0.0;
 
-        Cliente jose = Cliente.builder()
-                .nome("José")
-                .comprarPao(new PaoFrances())
-                .build();
+        List<Visitor> visitors = new ArrayList<>();
 
-        jose.comprar();
+        int visitorsAmount = rng.nextInt(1000-10) + 10;
 
-        jose.setComprarPao(new PaoCareca());
+        for (int i = 0; i < visitorsAmount; i++) {
+            Visitor visitor = null;
+            LocalDate dob = RandomDateGenerator.between(LocalDate.of(1930, Month.JANUARY, 1), LocalDate.now());
+            String name = UUID.randomUUID().toString().substring(0, 6);
+            boolean member = rng.nextBoolean();
+            Ticket ticket;
 
-        jose.comprar();
+            if (LocalDate.now().getYear() - dob.getYear() < 12
+                    || LocalDate.now().getYear() - dob.getYear() >= 65) {
+                ticket = new DiscountTicket();
+                 visitor = Visitor.builder()
+                        .name(name)
+                        .dob(dob)
+                        .member(member)
+                        .ticket(ticket)
+                        .build();
+                Double paidAmount = visitor.getTicket().pay(ticketValue);
+                totalAmount += paidAmount;
+                discountAmount += paidAmount;
+            }
 
+            if (member) {
+                ticket = new MermbershipTicket();
+                visitor = Visitor.builder()
+                        .name(name)
+                        .dob(dob)
+                        .member(member)
+                        .ticket(ticket)
+                        .build();
+                Double paidAmount = visitor.getTicket().pay(ticketValue);
+                totalAmount += paidAmount;
+                membershipAmount += paidAmount;
+            } else {
+                ticket = new DefaultTicket();
+                visitor = Visitor.builder()
+                        .name(name)
+                        .dob(dob)
+                        .member(member)
+                        .ticket(ticket)
+                        .build();
+                Double paidAmount = visitor.getTicket().pay(ticketValue);
+                totalAmount += paidAmount;
+                defaultAmount += paidAmount;
+            }
+            visitors.add(visitor);
+        }
 
+        System.out.println("Total income from " + visitorsAmount + " visitors: " + totalAmount);
+        System.out.println("Income from default tickets: " + defaultAmount);
+        System.out.println("Income from memberships: " + membershipAmount);
+        System.out.println(("Income from kids and elderly: " + discountAmount));
     }
 }
