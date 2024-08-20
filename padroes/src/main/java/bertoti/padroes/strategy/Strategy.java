@@ -1,17 +1,16 @@
-package bertoti.padroes;
+package bertoti.padroes.strategy;
 
-import bertoti.padroes.Tickets.DefaultTicket;
-import bertoti.padroes.Tickets.DiscountTicket;
-import bertoti.padroes.Tickets.MermbershipTicket;
-import bertoti.padroes.Tickets.Ticket;
-import bertoti.padroes.util.RandomDateGenerator;
+import bertoti.padroes.strategy.Tickets.DefaultTicket;
+import bertoti.padroes.strategy.Tickets.DiscountTicket;
+import bertoti.padroes.strategy.Tickets.MermbershipTicket;
+import bertoti.padroes.strategy.Tickets.Ticket;
+import bertoti.padroes.strategy.util.RandomDateGenerator;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.*;
-import java.util.random.RandomGenerator;
 
-public class Main {
+public class Strategy {
     public static void main(String[] args) {
         Random rng = new Random();
         Double ticketValue = 10.0;
@@ -34,7 +33,7 @@ public class Main {
             if (LocalDate.now().getYear() - dob.getYear() < 12
                     || LocalDate.now().getYear() - dob.getYear() >= 65) {
                 ticket = new DiscountTicket();
-                 visitor = Visitor.builder()
+                visitor = Visitor.builder()
                         .name(name)
                         .dob(dob)
                         .member(member)

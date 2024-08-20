@@ -1,4 +1,4 @@
-package bertoti.padroes.Tickets;
+package bertoti.padroes.strategy.Tickets;
 
 import lombok.*;
 
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Builder
-public class MermbershipTicket implements Ticket{
+public class MermbershipTicket implements Ticket {
     private LocalDate dateOfSubscription;
     private LocalDate dateOfEmission;
     private boolean expired;

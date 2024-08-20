@@ -1,4 +1,4 @@
-package bertoti.padroes.Tickets;
+package bertoti.padroes.strategy.Tickets;
 
 import lombok.*;
 

@@ -1,6 +1,6 @@
-package bertoti.padroes;
+package bertoti.padroes.strategy;
 
-import bertoti.padroes.Tickets.Ticket;
+import bertoti.padroes.strategy.Tickets.Ticket;
 import lombok.*;
 
 import java.time.LocalDate;

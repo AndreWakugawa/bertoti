@@ -1,4 +1,4 @@
-package bertoti.padroes.util;
+package bertoti.padroes.strategy.util;
 
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
