@@ -3,15 +3,15 @@ package bertoti.padroes.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherStation {
-    private List<ObserverPattern> observers = new ArrayList<>();
+public class Inpe {
+    private List<Observer> observers = new ArrayList<>();
     private float temp;
 
-    public void addObserver(ObserverPattern observer) {
+    public void addObserver(Observer observer) {
         observers.add(observer);
     }
 
-    public void removeObserver(ObserverPattern observer) {
+    public void removeObserver(Observer observer) {
         observers.remove(observer);
     }
 
@@ -21,7 +21,7 @@ public class WeatherStation {
     }
 
     private void notifyObservers() {
-        for (ObserverPattern observer : observers) {
+        for (Observer observer : observers) {
             observer.update(temp);
         }
     }

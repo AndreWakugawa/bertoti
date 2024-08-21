@@ -6,5 +6,6 @@ public class SanjaTV implements Observer{
     @Override
     public void update(float temp) {
         this.temp = temp;
+        System.out.println("Temperatura agora em São José dos Campos: " +temp);
     }
 }
