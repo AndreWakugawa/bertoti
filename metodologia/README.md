@@ -3,7 +3,7 @@
 ## Introdução
 
 Tenho 24 anos, sou bacharel em Imagem e Som pela Universidade Federal de São Carlos e graduando do Tecnólogo em Banco de Dados pela FATEC Prof. Jessen Vidal.
-Sou estagiário de TI na empresa KLG do Brasil.
+Sou estagiário de TI na empresa KLG do Brasil onde atuo desenvolvendo sistemas para uso interno envolvendo importação de produtos, estoque e financeiro. 
 
 ## Contatos
 * [GIT](https://github.com/AndreWakugawa)
